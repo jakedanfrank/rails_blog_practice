@@ -1,7 +1,12 @@
 <p>Find me in app/views/pages/index.html.erb</p>
 
 <h1> Pages </h1>
-<p><%= link_to 'New Page', new_page_path %></p>
+<p><%= link_to '* New Page ', new_page_path %></p>
   <% @pages.each do |page| %>
-  <%= link_to 'Show Page', page_path(page) %>
+  <hr/>
+  <%= link_to '* Show page ', page_path(page) %>
+  <br/>
+  <%= link_to '* Edit Page ', edit_page_path(page) %>
+  <br/>
+  <%= link_to '* Destroy Page ', page, method: :delete %>
 <% end %>
