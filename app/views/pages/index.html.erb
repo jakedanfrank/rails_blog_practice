@@ -1,0 +1,7 @@
+<p>Find me in app/views/pages/index.html.erb</p>
+
+<h1> Pages </h1>
+<p><%= link_to 'New Page', new_page_path %></p>
+  <% @pages.each do |page| %>
+  <%= link_to 'Show Page', page_path(page) %>
+<% end %>

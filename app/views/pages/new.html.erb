@@ -1,0 +1,16 @@
+<p>Find me in app/views/pages/new.html.erb</p>
+<h1>New Page </h1>
+<%= form_for @page do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+
+  <%= f.label :body %>
+  <%= f.text_area :body %>
+
+  <%= f.label :author %>
+  <%= f.text_field :author %>
+
+  <%= f.submit %>
+<% end %>
+
+  <%= link_to "Back", pages_path %>
